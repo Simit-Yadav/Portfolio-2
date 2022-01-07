@@ -1,0 +1,291 @@
+<!-- <section class="projects-container">
+    <div class="circle"></div>
+    <div class="list-container">
+        <div>
+        <cdk-accordion class="example-accordion">
+            <cdk-accordion-item *ngFor="let item of list1; let index = index;" #accordionItem="cdkAccordionItem"
+                class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+                <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                    {{ item }}
+                    <span class="example-accordion-item-description">
+                        Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+                    </span>
+                </div>
+                <div class="example-accordion-item-body" role="region"
+                    [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                    [attr.aria-labelledby]="'accordion-header-' + index">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                    excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+                    veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+                </div>
+            </cdk-accordion-item>
+        </cdk-accordion>
+        </div>
+        <div>
+        <cdk-accordion class="example-accordion">
+            <cdk-accordion-item *ngFor="let item of list2; let index = index;" #accordionItem="cdkAccordionItem"
+                class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+                <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                    {{ item }}
+                    <span class="example-accordion-item-description">
+                        Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+                    </span>
+                </div>
+                <div class="example-accordion-item-body" role="region"
+                    [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                    [attr.aria-labelledby]="'accordion-header-' + index">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                    excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+                    veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+                </div>
+            </cdk-accordion-item>
+        </cdk-accordion>
+        </div>
+        <div>
+        <cdk-accordion class="example-accordion">
+            <cdk-accordion-item *ngFor="let item of list3; let index = index;" #accordionItem="cdkAccordionItem"
+                class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+                <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                    {{ item }}
+                    <span class="example-accordion-item-description">
+                        Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+                    </span>
+                </div>
+                <div class="example-accordion-item-body" role="region"
+                    [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                    [attr.aria-labelledby]="'accordion-header-' + index">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                    excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+                    veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+                </div>
+            </cdk-accordion-item>
+        </cdk-accordion>
+        </div>
+    </div>
+</section> -->
+<section class="projects-container">
+    <div class="upper-container container">
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem2="cdkAccordionItem" class="example-accordion-item" role="button"
+                    [attr.id]="'accordion-header-4'" [attr.aria-expanded]="accordionItem2.expanded"
+                    [attr.aria-controls]="'accordion-body-4'">
+                    <div class="example-accordion-item-header" (click)="accordionItem2.toggle()">
+                        Music Application
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem2.expanded ? '' : 'none'" [attr.id]="'accordion-body-4'"
+                        [attr.aria-labelledby]="'accordion-header-4'">
+                        <div class="redirectTo">
+                            <a href="https://simitmusic.netlify.app/newReleases"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/Music-Application')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            Demonstrating my skills of Angular through this project. I designed and build the small music application 
+                            for the users to easily see the new releases on Spotify and listen to the Demo verion through my web applicaton. 
+                            The app fetches the data from the Spotify API and display it on my Web app.
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem4="cdkAccordionItem" class="example-accordion-item" role="button"
+                    [attr.id]="'accordion-header-8'" [attr.aria-expanded]="accordionItem4.expanded"
+                    [attr.aria-controls]="'accordion-body-8'">
+                    <div class="example-accordion-item-header" (click)="accordionItem4.toggle()">
+                        E-Commerce Site
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem4.expanded ? '' : 'none'" [attr.id]="'accordion-body-8'"
+                        [attr.aria-labelledby]="'accordion-header-8'">
+                        <div class="redirectTo">
+                            <a href="https://ecommerce-proj-sy.netlify.app/"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/ecommerce-project')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            In the project I tried making a Ecommerce store/website using the Commercejs API services. The main purpose of this project was to understand how ecommerce works and to give myself more exposure of React and Materail UI.
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem1="cdkAccordionItem" class="example-accordion-item" role="button"
+                    tabindex="0" [attr.id]="'accordion-header-1'" [attr.aria-expanded]="accordionItem1.expanded"
+                    [attr.aria-controls]="'accordion-body-1'">
+                    <div class="example-accordion-item-header" (click)="accordionItem1.toggle()">
+                        Restaurant Application
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                    [style.display]="accordionItem1.expanded ? '' : 'none'" [attr.id]="'accordion-body-1'"
+                    [attr.aria-labelledby]="'accordion-header-1'">
+                        <div class="redirectTo">
+                            <a href="https://react-app.sy94.repl.co"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/Assignment-03')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            The app uses mongodb sample data to suggest restaurants according to location if specified and provide a full map to view using leaflet library. It also showes the rating for the restaurants.
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem7="cdkAccordionItem" class="example-accordion-item" role="button"
+                    [attr.id]="'accordion-header-8'" [attr.aria-expanded]="accordionItem7.expanded"
+                    [attr.aria-controls]="'accordion-body-8'">
+                    <div class="example-accordion-item-header" (click)="accordionItem7.toggle()">
+                        Kerala Lunch Box
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem7.expanded ? '' : 'none'" [attr.id]="'accordion-body-8'"
+                        [attr.aria-labelledby]="'accordion-header-8'">
+                        <div class="redirectTo">
+                            <a href="https://kerala-lunch-box.herokuapp.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/Kerala-Lunch-Box')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            The website is for a small catering business(ready but not used by owner). The site registers customer give option to select meal from multiple options and select a plan. It allows admin to have a weekly report for next week.
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+        
+        
+    </div>
+    <div class="circle-container">
+        <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/Simit-Yadav')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2" ></mat-icon>
+        <mat-icon svgIcon="linkedin" (click)="redirect('https://www.linkedin.com/in/simit-yadav-/?originalSubdomain=ca')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2" ></mat-icon>
+
+        <div class="circle"></div>
+
+        <mat-icon svgIcon="ig" (click)="redirect('https://www.instagram.com/smith__5394/')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2" ></mat-icon>
+        <mat-icon svgIcon="telegram" (click)="redirect('https://t.me/SY5394')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2" ></mat-icon>
+    </div>
+    <div class="lower-container container">
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem3="cdkAccordionItem" class="example-accordion-item" role="button"
+                    [attr.id]="'accordion-header-5'" [attr.aria-expanded]="accordionItem3.expanded"
+                    [attr.aria-controls]="'accordion-body-5'">
+                    <div class="example-accordion-item-header" (click)="accordionItem3.toggle()">
+                        Personal Portofio-1
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem3.expanded ? '' : 'none'" [attr.id]="'accordion-body-5'"
+                        [attr.aria-labelledby]="'accordion-header-5'">
+                        <div class="redirectTo">
+                            <a href="https://simityadav.vercel.app/"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/portfolio-website')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            The first portfolio-website designed and maintained by me. 
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem5="cdkAccordionItem" class="example-accordion-item" role="button"
+                    [attr.id]="'accordion-header-8'" [attr.aria-expanded]="accordionItem5.expanded"
+                    [attr.aria-controls]="'accordion-body-8'">
+                    <div class="example-accordion-item-header" (click)="accordionItem5.toggle()">
+                        Notes Taking App
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem5.expanded ? '' : 'none'" [attr.id]="'accordion-body-8'"
+                        [attr.aria-labelledby]="'accordion-header-8'">
+                        <div class="redirectTo">
+                            <a href="https://notes-app-sy.vercel.app/"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/Notes-App')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            This is a small notes app which showcase my React skills. The app works best on screen size of tablet and above.
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem6="cdkAccordionItem" class="example-accordion-item" role="button"
+                    [attr.id]="'accordion-header-8'" [attr.aria-expanded]="accordionItem6.expanded"
+                    [attr.aria-controls]="'accordion-body-8'">
+                    <div class="example-accordion-item-header" (click)="accordionItem6.toggle()">
+                        Revise Application
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem6.expanded ? '' : 'none'" [attr.id]="'accordion-body-8'"
+                        [attr.aria-labelledby]="'accordion-header-8'">
+                        <div class="redirectTo">
+                            <a href="https://revise-today.netlify.app/"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/Quiz-App')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            I developed, designed and created this simple app that help to revise the small concept and syntax in every programming language. It's UI is designed to be user friendly. You can easily add more questions as well.
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>        
+        <div class="project">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item #accordionItem8="cdkAccordionItem" class="example-accordion-item" role="button"
+                    [attr.id]="'accordion-header-8'" [attr.aria-expanded]="accordionItem8.expanded"
+                    [attr.aria-controls]="'accordion-body-8'">
+                    <div class="example-accordion-item-header" (click)="accordionItem8.toggle()">
+                        Fem-EasyBank(Landing Page)
+                        <span class="example-accordion-item-description">
+                            Click
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem8.expanded ? '' : 'none'" [attr.id]="'accordion-body-8'"
+                        [attr.aria-labelledby]="'accordion-header-8'">
+                        <div class="redirectTo">
+                            <a href="https://fem-easybank-nine.vercel.app/"><img src="https://img.icons8.com/ios-glyphs/30/000000/link--v1.png"/></a>
+                            <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/fem-easybank')" aria-hidden="false" aria-label="Example thumbs up SVG icon"  class="icons-display"></mat-icon>
+                        </div>
+                        <div>
+                            The speciality of this project is that I took a challenge from the FrontEndMentor.com website for this landing page to improve the frontend skills. I made the project with some modern CSS features.
+                        </div>
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+    </div>
+</section>

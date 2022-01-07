@@ -1,0 +1,9 @@
+<div class="explore">
+    <button mat-flat-button color="primary" *ngIf="currentPath == '/home'" routerLink="/projects">Projects</button>
+    <!-- <div class="vertical-line"></div> -->
+    <button mat-flat-button color="primary" *ngIf="currentPath == '/projects'" routerLink="/home">Home</button>
+</div>
+<div class="name-container">
+    <span>Simit Yadav</span>
+</div>
+<router-outlet></router-outlet>

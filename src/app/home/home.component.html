@@ -1,0 +1,32 @@
+<section class="content-container">
+    <div class="description content">
+        <p>
+            Passion to build web applications with latest technology and Java graphics applications using
+            Object-oriented programming.
+            Graduated from Compuer Programmer Program from Seneca College of Applied Arts and Technology with in demand skills and
+            hunger to learn more exciting skills.
+        </p>
+    </div>
+    <div class="circle-container">
+        <mat-icon svgIcon="github" (click)="redirect('https://github.com/Simit-Yadav/Simit-Yadav')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2"></mat-icon>
+        <mat-icon svgIcon="linkedin"
+            (click)="redirect('https://www.linkedin.com/in/simit-yadav-/?originalSubdomain=ca')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2"></mat-icon>
+
+        <div class="circle"></div>
+
+        <mat-icon svgIcon="ig" (click)="redirect('https://www.instagram.com/smith__5394/')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2"></mat-icon>
+        <mat-icon svgIcon="telegram" (click)="redirect('https://t.me/SY5394')" aria-hidden="false"
+            aria-label="Example thumbs up SVG icon" class="icons-display-2"></mat-icon>
+    </div>
+    <div class="education content">
+        <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
+            >
+            <mat-chip class="example-box" cdkDrag *ngFor="let skill of skills">
+                {{skill.name}}
+            </mat-chip>
+        </mat-chip-list>
+    </div>
+</section>

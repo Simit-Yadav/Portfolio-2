@@ -1,0 +1,152 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+
+.projects-container {
+  margin: 3rem 0rem 0rem 0rem;
+  padding: 2rem 1.4rem 2rem 1.4rem;
+  min-height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .container{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .upper-container{
+    margin-bottom: 1.5rem;
+  }
+  
+  .lower-container{
+    margin-top: 1.5rem;
+    
+  }
+  
+  .project{
+    display: flex;
+  border-radius: 1.2rem !important;
+
+    
+    .redirectTo{
+      img{
+        margin-right: 0.5rem;
+      }
+
+      .icons-display{
+        width: $mobile-width-height;
+        height: $mobile-width-height;
+        cursor: pointer;
+        
+
+        @include breakpoint-up(medium){
+          width: $desktok-width-height;
+          height: $desktok-width-height;
+        }
+      }
+
+      a{
+        text-decoration: none;
+      }
+    }
+    
+    &:nth-child(even){
+      justify-content: flex-end;
+    }
+  }
+
+  .list-container{
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    
+
+    @include breakpoint-up(medium){
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint-up(large){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  
+}
+
+.example-accordion {
+  display: block;
+  width: 100%;
+  border-radius: 1.2rem !important;
+  color: #fff;
+  background: rgba( 21, 94, 117, 0.5 );
+  line-height: 1.5rem;
+  
+
+
+  @include breakpoint-up(medium){
+    width: calc(100vw - 60%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+  @include breakpoint-up(large){
+    width: calc(100vw - 70%);
+  }
+}
+
+
+.example-accordion-item {
+  display: block;
+  border: solid 1px #ccc;
+  font-size: $para-mobile;
+  border-radius: 1.2rem;
+  border: 0px;
+
+
+  @include breakpoint-up(medium){
+    font-size: $para-tablet;
+  }
+}
+
+.example-accordion-item + .example-accordion-item {
+  border-top: none;
+}
+
+.example-accordion-item-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  font-size: $sub-heading-2 - 0.1;
+  
+}
+
+.example-accordion-item-description {
+  color: #fff;
+}
+
+.example-accordion-item-header,
+.example-accordion-item-body {
+  border-radius: 1.2rem !important;
+
+  padding: 16px;
+}
+
+.example-accordion-item-header:hover {
+  cursor: pointer;
+}
+
+// .example-accordion-item:first-child {
+//   border-top-left-radius: 4px;
+//   border-top-right-radius: 4px;
+// }
+
+// .example-accordion-item:last-child {
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+// }
